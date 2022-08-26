@@ -11,21 +11,25 @@ var possibleChars = "";
 //instructions
 
 
-window.confirm("Password must be 8-128 characters and include a lowercase and uppercase letter, a special character, and/or a number");
+
 
 // ask for number of characters and store answer in userChars
 
-
-
-
 function generatePassword(){
 
+window.confirm("Password must be 8-128 characters and include a lowercase and uppercase letter, a special character, and/or a number");
+
 var passLength = window.prompt("Enter number of characters between 1 - 128");
+
+// choose pass length, if cancel selected then prompts will end
+
+
 if(passLength<=128 && passLength>=8){
   alert("That's my favorite number!")
 }
 else{
   alert("please TRY")
+  return("-------------------")
 };
 
 // Checking user preferences and adding to possibleChars array if user selects ok
@@ -77,12 +81,18 @@ var userSpcl = confirm("Do you want special characters?")
 console.log(possibleChars)
 
 // if no identifiers are selected
-if(upper === false && lower === false && numbers === false && special === false){
-  console.log("Please select at least ONE unique characteristic!")
-}
+if(userUpper === false && userLower === false && userNum === false && userSpcl === false){
+  alert("Please select at least ONE unique characteristic!")
+};
 
-const finalChars = possibleChars(Math.floor(math.random()*possibleChars.length))
-// console.log(specialChars);
+// need to select randomly from possible chars
+for(i=0; i<passLength; i++){
+  var finalChars = Math.random()*possibleChars.length;
+  var lastChars = finalChars.toString
+};
+console.log)
+
+
 
 
 //TODO: check if .INCLUDES
