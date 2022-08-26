@@ -1,7 +1,7 @@
 # passwordGenerator
 CHRIS KANG'S PASSWORD GENERATOR
 
-[VISIT MY PASSWORD GENERATOR!]("")
+[VISIT MY PASSWORD GENERATOR!](https://kjman26.github.io/passwordGenerator/)
 
 ![Screenshot](./Assets/Images/screenshot03.png)
 
