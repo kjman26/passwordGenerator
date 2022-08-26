@@ -8,7 +8,7 @@ var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var special = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '-', '_', '='];
 var possibleChars = "";
 var passLength;
-
+var password = "";
 
 
 
@@ -82,14 +82,15 @@ console.log(passLength)
     alert("Please select at least ONE unique characteristic!")
   };
 
+  //build the password with possibleChars randomly
 console.log(possibleChars)
+
   for (i = 0; i <= passLength; i++) {
-    const finalChars = possibleChars.charAt(Math.floor(Math.random() * possibleChars.length))
-    password = password + finalChars;
+    const finalChars = possibleChars[Math.floor(Math.random()*passLength)];
+    password = password + finalChars; 
   };
-
-  console.log(password)
-
+ 
+console.log(password)
   return password;
 };
 
