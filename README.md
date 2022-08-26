@@ -1,5 +1,8 @@
 # passwordGenerator
+CHRIS KANG'S PASSWORD GENERATOR
+
 [VISIT MY PASSWORD GENERATOR!]("")
+
 ![Screenshot](./Assets/Images/screenshot03.png)
 
 Description: This website generates random passwords for the user!
